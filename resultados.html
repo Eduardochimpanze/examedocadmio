@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados - Exame do Cádmio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3e3c691653.js" crossorigin="anonymous"></script>
+    <!--CSS/Bootstrap-->
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <section class="white-section" id="title">
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <a class="navbar-brand" href="https://cbt.ifsp.edu.br"><img class="iflogo" src="img/iflogo.jpg" alt="logo"></a>
+            <a class="navbar-brand" href="index.html">Exame do Cádmio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="intro.html">Sobre</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="intro.html#objetivo">Metodologia</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="resultados.html">Resultados</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <!-- Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="big-heading">Resultados</h1>
+                    <br>
+                    <h3>Discussão e Conclusões</h3>
+                </div>
+                <div class="col-lg-6 title-image-col title-image-cont">
+                    <img class="title-image" src="img/open-book.png" alt="livro">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="escuro">
+        <div class="container-fluid">
+            <h2 class="section-heading">Tabela de Revisão</h2>
+            <h4 class="section-text"><span class="invisible">nada</span>São diversos os estudos que analisam a concentração de metais pesados em alimentos para consumo humano, 
+                sobretudo em vegetais na condição de culturas convencionais, onde o uso de fertilizantes fosfatados e outros tipos de perigosos insumos, 
+                como agrotóxicos, é frequente e fortificado (<a href="https://doi.org/10.1590/fst.117521">LIU et al, 2022</a>;
+                    <a href="https://doi.org/10.1590/S1981-67232012005000044"> NITZKE et al, 2012</a>;<a href="https://doi.org/10.1590/S1413-41522018164218"> LIMA, FRANÇA, DE JESUS, 2018</a>)</cite>. 
+                    A Tabela 3 apresenta as informações sobre determinados artigos, o alimento estudado, suas concentrações médias, metodologias, ano de publicação e região originária da 
+                amostra do alimento.
+            </h4>
+            <div class="table-responsive">
+            <table id="mytable" class="table table-striped table-hover table-light table-bordered">
+                <caption> Tabela 3.: Artigos selecionados relacionando nome dos autores, alimento estudado, metodologia utilizada e concentrações encontradas.
+                    *Siglas referem-se a diferentes tipos de análise espectrométrica, onde: <br>AAS – Espectrometria de Absorção Atômica; 
+                    <br>ICP MS – Espectrometria de Massa por Plasma Indutivamente Acoplado; <br>ET AAS – Espectrometria de Absorção Atômica Eletrotérmica; 
+                    <br>ICP OES – Espectrometria de Emissão Óptica por Plasma Indutivamente Acoplado;
+                    <br>GF AAS - Espectrometria de absorção atômica com forno de grafite </caption>
+                <thead>
+                <tr>
+                        <th>Referência</th><th>Ano</th><th>Alimentos Analisados</th><th>Metodologia*</th><th>Concentração média de Cd (μg/kg)</th>
+                        <th>Limite Máximo Tolerado(<a href="https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/rdc0487_26_03_2021.pdf">ANVISA, 2021</a></th>
+                        <th>Origem das Amostras</th>
+                    </tr>
+                <tbody class="table-group-divider">
+                    <tr>
+                        <td>POLETTI, J. <em>ET AL</em></td>
+                        <td>2014</td>
+                        <td>Arroz</td>
+                        <td>AAS, ICP-MS</td>
+                        <td>17 μg/kg</td>
+                        <td>400 μg/kg</td>
+                        <td>RS</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://doi.org/10.1590/S0103-90162012000100008">GUERRA, F.<em> ET AL</em></a></td>
+                        <td>2012</td>
+                        <td>Batata-doce, <br>Mandioca, <br>Uva</td>
+                        <td>Digestão com HNO3, HClO4, Análise AAS</td>
+                        <td>110-140 μg/kg;<br> 100-130 μg/kg;<br>70-90 μg/kg</td>
+                        <td>100 μg/kg,<br> 100 μg/kg,<br>50 μg/kg</td>
+                        <td>MG, PE, SP, SE</td>
+                    </tr>
+                    <tr>
+                        <td>MATAVELI, L. R. V. <em>ET AL</em>
+                        </td>
+                        <td>2016
+                        </td>
+                        <td>
+                            Arroz
+                        </td>
+                        <td>
+                            ICP-MS
+                        </td>
+                        <td>
+                            42 ± 12 μg/kg
+                        </td>
+                        <td>
+                            400 μg/kg
+                        </td>
+                        <td>
+                            SP
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DE CARVALHO, G. A. D. <em>ET AL</em>
+                        </td>
+                        <td>
+                            2020
+                        </td>
+                        <td>
+                                Alface; Cenoura
+                        </td>
+                        <td>
+                                ET AAS, QFAs (Questionários de Frequência Alimentar)
+                        </td>
+                        <td>
+                                Alface Convencional: 155 ± 70 μg/kg Alface Orgânica:
+                                81 ± 49 μg/kg Cenoura Convencional:
+                                117 ± 104 μg/kg Cenoura Orgânica:
+                                106 ± 64 μg/kg
+                        </td>
+                        <td>
+                                Alface: 50 μg/kg Cenoura: 100 μg/kg
+                        </td>
+                        <td>
+                                RJ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <a href="https://doi.org/10.1590/S0103-90162012000100008">KATO, L. S. <em>ET AL</em></a>
+                        </td>
+                        <td>
+                            2019
+                        </td>
+                        <td>
+                                Arroz
+                        </td>
+                        <td>
+                                ICP-MS
+                        </td>
+                        <td>
+                                14,6 ± 10,0 μg/kg
+                        </td>
+                        <td>
+                                400 μg/kg
+                        </td>
+                        <td>
+                                MT, RS, SC
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CARVALHO, M. E. A. ET AL
+                        </td>
+                        <td>
+                            2018
+                        </td>
+                        <td>
+                                Tomate
+                        </td>
+                        <td>
+                                Polpa do tomate espremido com gaze, medição do pH, adição
+                                de NaOH e examinação via ICP-OES
+                        </td>
+                        <td>
+                                106 μg/kg-157 μg/kg(Yoshimatsu/Two Orders)
+                        </td>
+                        <td>
+                                50 μg/kg
+                        </td>
+                        <td>
+                                SP
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ARAÚJO, D. F. S. <em>ET AL</em>
+                        </td>
+                        <td>
+                            2014
+                        </td>
+                        <td>
+                                Alface, Pimentão, Tomate 
+                        </td>
+                        <td>
+            AAS, Uso de MgSO<sub>4</sub>, NaCl, C<sub>6</sub>H<sub>9</sub>Na<sub>3</sub>O<sub>9</sub> e C<sub>12</sub>H                    <sub>18</sub>Na<sub>4</sub>O<sub>17</sub>
+                        </td>
+                        <td>
+                                Alface Orgânica:
+                                84 ± 20 μg/L //Alface Convencional: 85 ± 30 μg/L Pimentão
+                                Orgânico: 70 ± 10 μg/L Pimentão Convencional: 70 ± 20 μg/L
+                                Tomate Orgânico: 59 ± 13 μg/L Tomate Convencional: 61 ± 23
+                                μg/L
+                        </td>
+                        <td>
+                                Todos: 50 μg/kg
+                        </td>
+                        <td>
+                                PE
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MUNIZ, A. S. <em>ET AL</em>
+                        </td>
+                        <td>
+                            2022
+                        </td>
+                        <td>
+                                Alface, Cenoura
+                        </td>
+                        <td>
+            Digestão utilizando HNO<sub>3 </sub>e H<sub>2</sub>O                    <sub>2</sub>, método USEPA 3050B modificado. Análise
+                                GF-AAS.
+                        </td>
+                        <td>
+                                Alface Convencional: 154,9 ± 26,6 μg/kg Alface Orgânica:
+                                81,1 ± 36,7 μg/kg Cenoura Convencional: 117,4 ± 78 μg/kg
+                                Cenoura Orgânica: 106,4 ± 55,3 μg/kg
+                        </td>
+                        <td>
+                                Alface: 50 μg/kg Cenoura: 100 μg/kg
+                        </td>
+                        <td>
+                                RJ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MELO, L. C. A. <em>ET AL</em>
+                        </td>
+                        <td>
+                            2013
+                        </td>
+                        <td>
+                                Alface
+                        </td>
+                        <td>
+            Inserção dos solos com solução Cd(NO<sub>3</sub>)                    <sub>2</sub>, HNO<sub>3</sub> e H<sub>2</sub>O<sub>2</sub>,
+                                análise por FAAS; GF-AAS quando concentrações menores que
+                                Limites de detecção
+                        </td>
+                        <td>
+                                Em solo contaminado por
+                                3 mg/kg de Cd:
+                                20 / 40 mg/kg
+                                (Solo Latossolo // Argissolo)
+                                Em solo contaminado por
+                                12 mg/kg de Cd:
+                                70 / 150 mg/kg
+                                (Solo Latossolo // Argissolo)
+                        </td>
+                        <td>
+                                50 μg/kg
+                        </td>
+                        <td>
+                                SP
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CORGUINHA, A. P. B. <em>ET AL,</em>
+                        </td>
+                        <td>
+                            2015
+                        </td>
+                        <td>
+                                Arroz
+                        </td>
+                        <td>
+                                Pré-fertilização com NPK comercial, e tratamento adicional
+                                com nitrogênio e sulfato de amônia. USEPA 3051A, GF-AAS
+                        </td>
+                        <td>
+                                29 μg/kg
+                        </td>
+                        <td>
+                                400 μg/kg
+                        </td>
+                        <td>
+                                MG
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DE LIMA, C. V. S; HOEHNE, L.; MEURER, E. J.
+                        </td>
+                        <td>
+                            2015
+                        </td>
+                        <td>
+                                Arroz
+                        </td>
+                        <td>
+                                USEPA 3050B, ICP-OES, FAAS, INAA, TXRF
+                        </td>
+                        <td>
+                                2 μg/kg (Limite de Detecção)
+                        </td>
+                        <td>
+                                400 μg/kg
+                        </td>
+                        <td>
+                                RS
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DE SOUZA, F. F. <em>ET AL</em>
+                        </td>
+                        <td>
+                            2020
+                        </td>
+                        <td>
+                                Tomate
+                        </td>
+                        <td>
+                                USEPA 3050B, Uso de Ácido Acético, Análise com ICP-OES
+                        </td>
+                        <td>
+                                2 μg/kg
+                        </td>
+                        <td>
+                                50 μg/kg
+                        </td>
+                        <td>
+                                RJ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DE SOUZA, E. S. <em>ET AL</em>
+                        </td>
+                        <td>
+                            2017
+                        </td>
+                        <td>
+                                Tomate, Cebola, Coentro, Rúcula, Jiló e Couve
+                        </td>
+                        <td>
+                                Digestão com HCl e HNO<sub>3 </sub>, USEPA 3051a, ICP-OES,
+                                mistura com H<sub>2</sub>O<sub>2</sub>
+                        </td>
+                        <td>
+                                Todas &lt;10 μg/kg (Abaixo do limite de detecção)
+                        </td>
+                        <td>
+                                Todas:
+                                50 μg/kg
+                        </td>
+                        <td>
+                                PA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DALA-PAULA, B. M. <em>ET AL</em>
+                        </td>
+                        <td>
+                            2018
+                        </td>
+                        <td>
+                                Alface
+                        </td>
+                        <td>Digestão com HNO<sub>3</sub>, HF, H<sub>3</sub>BO<sub>3</sub>. Análise ICP-MS.
+                        </td>
+                        <td>
+                                De 5 a 18 μg/kg
+                        </td>
+                        <td>
+                                50 μg/kg
+                        </td>
+                        <td>
+                                MG
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4 class="section-text"><span class="invisible">nada</span><a href="https://doi.org/10.1590/S0103-90162012000100008">Guerra et al (2012)</a> evidencia a presença de Cd em diversos frutos, legumes e hortaliças, provindas principalmente de SP. Embora a concentração média das maioria das amostras pode ser considerado alto, apenas as amostras de uva, mandioca e batata-doce excederam o limite máximo de tolerância (LMT) divulgados em <a target="_blank" href="https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2020/rdc0487_26_03_2021.pdf">ANVISA(2021)</a>.<br>
+            <br><span class="invisible">nada</span>Em<a href="https://doi.org/10.1590/fst.106721"> Muniz et al (2022)</a>, apresenta-se a diferença de amostras de cenoura e alface plantadas em culturas orgânicas e convencionais. Apenas as amostras de alface estavam dentro dos valores estabelecidos pela ANVISA, enquanto que as cenouras orgânicas e convencionais apresentavam, respectivamente, 6,4 e 17,4 μg/kg a mais que o permitido.  O teor de Cd encontrado nos vegetais originários de culturas convencionais era 1,2 a 3,1 vezes maior do que nas nos de culturas orgânicas: A alface orgânica, por exemplo, apresentava uma concentração média de 81,1  ± 36,7 μg/kg, enquanto que a convencional apresentava 154,9 ±  26,6 μg de Cd/kg.<br>
+            <br><span class="invisible">nada</span>O arroz é um alimento pouco afetado pela contaminação por Cd, relacionado ao seu alto LMT, de 400 μg/kg. Estudos como <a href="https://doi.org/10.1590/S0103-90162012000100008">Kato et al (2019)</a> - onde a maior média de concentração de Cd era a de RS, com 18.6 ± 10.3 μg/kg, e a amostra com maior concentração não passava dos 100 μg/kg -, e Mataveli et al (2016) – com muitas amostras abaixo dos limites de detecção, outras contendo 42 ± 12 μg/kg de Cd -  evidenciam isto.<br>
+            <br><span class="invisible">nada</span>Existe uma relação linear entre determinadas quantidades de cádmio disponível no solo contaminado e a concentração média de Cd no alimento proveniente deste solo: <a href="https://doi.org/10.1080/10807039.2012.688716">Melo et al (2013)</a> demonstra a inserção de nitrato de cádmio Cd(NO<sub>3</sub>)<sub>2</sub> em diferentes quantidades em diferentes amostras, de 3 até 12 mg/kg. Comparou-se também a absorção do elemento pela alface, alimento estudado, em dois tipos de solo: a alface provinda do argissolo, que apresenta baixos teores de matéria orgânica em comparação ao latossolo, apresentou praticamente o dobro de Cd da alface plantada e colhida no outro solo.<br>
+            <br><span class="invisible">nada</span>No que tange aos estudos sobre a redução da concentração de cádmio, existem diversos artigos que dissertam sobre e analisam técnicas de fitorremediação, fitoextração e outros tipos de tratamento de solos contaminados por metais pesados; <a href="https://doi.org/10.1590/S0006-87052007000400015">Zeittouni, Berton e De Abreu (2007)</a> avaliam a capacidade de extração de metais pesados de plantas de mamona, girassol, tabaco e pimenta da amazônia de um latossolo contaminado por cádmio, chumbo, cromo, níquel e zinco - foi concluído que a planta de tabaco é muito eficiente no trabalho de retirar o Cd e o Zn do solo para seu caule.<br>
+            <br><span class="invisible">nada</span><a href="https://doi.org/10.1590/S1413-41522020183498">Dos Santos et. al (2020)</a> mostrou que o tratamento de solo com o cimento do tipo Portland - o mais usado mundialmente - é eficaz na sorção de Pb<sup>2+</sup>, Cd<sup>2+</sup>, Cr<sup>3+</sup> e As<sup>5+</sup> por meio de barreiras reativas permeáveis, que, misturadas ao solo, reduzem a mobilidade dos contaminantes pela região contaminada. As doses ideais encontradas de mistura do cimento ao solo para a adsorção do cádmio foi de 1% para o solo argiloso, e de 2% para o solo arenoso. As duas tiveram, respectivamente, capacidade de absorção máxima de 3,543 e 2,51 mg/g.<br></h4>
+        </div>
+        
+    </section>
+    <section id="conclusao" class="white-section">
+        <div class="container-fluid">
+        <h2 class="section-heading">Conclusão</h2>
+        <h4 class="section-text"><span class="invisible">nada</span>A presente revisão demonstrou o impacto de alimentos contaminados por cádmio no Brasil. 
+            Embora muitos artigos indiquem uma concentração de cádmio abaixo dos limites permitidos, existe muita evidência de altas concentrações deste metal 
+            pesado no solo e em determinados alimentos. Além disso, é considerável e relevante o fundamento de prevenção e remediação de solos contaminados com o cádmio,
+            assim, alimentando a busca por mais e melhores técnicas de recuperação de ambientes de alimentos contaminados, a fim de melhora da situação da saúde coletiva.
+            De qualquer maneira, é de suma importância que mais estudos sejam realizados para a melhor compreensão do assunto e assim conhecer as estratégias que evitem a contaminação ou suas consequências causadas pelo cádmio.
+        </h4>
+    </div>
+    </section>
+    <footer id="footer">
+        <a href="feedback.html"><h5> Quer avaliar o nosso site? Fale conosco e deixe seu Feedback!</h5></a>
+        <a href="https://www.facebook.com/ifspcubatao"><i class="fa-brands fa-facebook-f footer-icons"></i></a>
+        <a href="https://www.instagram.com/ifspcubatao/"><i class="fa-brands fa-instagram footer-icons"></i></a>
+        <a href="https://www.cbt.ifsp.edu.br"><i class="fa-solid fa-house footer-icons"></i></a>
+        <p>© Copyright 2022 - Eduardo Lemos - IFSP Cubatão</p>
+    
+      </footer>
+      <script src="js/nativo.js"></script>
+</body>
+</html>

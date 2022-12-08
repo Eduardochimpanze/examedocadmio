@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback - Exame do Cádmio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3e3c691653.js" crossorigin="anonymous"></script>
+    <!--CSS/Bootstrap-->
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <section class="white-section" id="title">
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <a class="navbar-brand" href="https://cbt.ifsp.edu.br"><img class="iflogo" src="img/iflogo.jpg" alt="logo"></a>
+            <a class="navbar-brand" href="index.html">Exame do Cádmio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="intro.html">Sobre</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="intro.html#objetivo">Metodologia</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="resultados.html">Resultados</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="container-fluid">
+        <h2 class="section-heading">Quer Contribuir ou tirar uma dúvida?<br>Dê o seu feedback!</h2>
+    <form id="feedback" name="feedback" method="POST" action="mailto:eduardo.lemos@aluno.ifsp.edu.br" class="form-group">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://api.whatsapp.com/send?phone=5513991296932"><i class="icon fa-brands fa-whatsapp fa-6x"></i></a>
+            </div>
+            <div class="col-md-4">
+                <a href="mailto:eduardo.lemos@aluno.ifsp.edu.br"><i class="fa-solid fa-envelope fa-6x icon"></i></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://github.com/Eduardochimpanze"><i class="fa-brands fa-github fa-8x icon"></i></a>
+            </div>
+        </div>
+        
+        
+    </form>
+    <form id="feedback" name="feedback" method="POST" action="mailto:eduardo.lemos@aluno.ifsp.edu.br" class="form-group">
+        
+        
+        <fieldset name="dadospessoais" form="feedback" class="form">
+            <legend>Dados Pessoais</legend>
+            <p><label class="form-label">Nome:  </label> <input class="form-control" type="text" id="nome" name="nome" maxlength="50" size="60" required/></p>
+            <p><label>E-mail:  </label> <input class="form-control" type="email" id="email" name="email" maxlength="50" size="60" autocomplete="on" required/></p>
+            <p><label>Telefone:  </label> <input class="form-control" type="tel" id="telefone" name="telefone" maxlength="13" size="12"/></p>            
+            <p><label>Idade:  </label> <input class="form-control" type="text" id="idade" name="idade" maxlength="3" size="3"/></p>
+        </fieldset>
+
+        <fieldset name="comentarios" form="feedback" class="form-group">
+            <legend>Comentários</legend>
+             <p>
+                <label for="quantidade" class="form-label">De 0 a 10, o quanto esse portal lhe agradou? </label> 
+                <input type="number" id="quantidade" name="quantidade" 
+                min="0" max="10" onClick="preencheBarra()"/>
+                <input  type="range" id="agradou" name="agradou" class="form-range"/>
+                <!-- <label for="customRange3" class="form-label">Example range</label>
+                <input type="range" class="form-range form-control" min="0" max="10" step="1" id="customRange3"> -->
+                                        
+                
+             </p>
+             <p>
+                 <label>Sobre qual página gostaria de comentar?</label>
+                 <select id= "idEsporte" required class="form-select form-control" aria-label="Default select example">
+                     <option value="">Escolha a página...</option>
+                     <option value="Index">Index</option>
+                     <option value="Introdução">Introdução</option>
+                     <option value="Metodologia">Metodologia</option>
+                     <option value="Resultados">Resultados</option>
+                     <option value="none">Nenhuma</option>
+                     <option value="none">Todas</option>
+                 </select>
+             </p>
+             <p>
+                 <label for="opiniao">Deixe aqui seus comentários: </label>
+                 <br>
+                 <textarea id="opiniao" class="form-control" name="comentario" cols="60" rows="10" maxlength="500" spellcheck="true"></textarea>
+             </p>
+        </fieldset>
+
+        <div id="botoes">
+            <input type="submit" id="enviar" value="Enviar" onClick="consiste()" class="btn btn-outline-dark btn-lg"/>
+            <input type="reset" id="limpar" value="Limpar" class="btn btn-outline-dark btn-lg"/>
+        </div>   
+        </form>
+    </div>
+    <footer id="footer">
+        <a href="aval.html"><h5> Quer avaliar o nosso site? Fale conosco e deixe seu Feedback!</h5></a>
+        <a href="https://www.facebook.com/ifspcubatao"><i class="fa-brands fa-facebook-f footer-icons"></i></a>
+        <a href="https://www.instagram.com/ifspcubatao/"><i class="fa-brands fa-instagram footer-icons"></i></a>
+        <a href="https://www.cbt.ifsp.edu.br"><i class="fa-solid fa-house footer-icons"></i></a>
+        <p>© Copyright 2022 - Eduardo Lemos - IFSP Cubatão</p>
+      </footer>
+      <script src="js/nativo.js"></script>
+        
+    </body>

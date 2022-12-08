@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu&display=swap');
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:  900;
+  font-size: 1.5rem;
+}
+
+p {
+  color: inherit;
+  font-size: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover, a:active{
+  color: #267534;
+  transition: .8s ease-in-out;
+  text-decoration: none;
+}
+
+.colored-section caption{
+    color: white;
+}
+
+.white-section caption{
+    color: black;
+}
+
+.table-light{
+    color: black;
+}
+
+.row{
+    text-align: center;
+}
+
+/* Headings */
+
+.big-heading {
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.section-text{
+  font-weight: 400;
+  text-align: start;
+  line-height: 2;
+}
+
+.bold{
+  font-weight: 900;
+  text-decoration: none;
+}
+/* Containers */
+
+.container-fluid{
+  padding: 3% 10%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #19391F;
+    color: white;
+}
+
+.white-section {
+  background-color: #fff;
+  color: #050F04;
+}
+
+#objetivo{
+  text-align: center;
+}
+
+/* Navigation Bar */
+
+.iflogo{
+  margin: 0 5%;  
+}
+
+.navbar {
+  margin-bottom: 3rem;
+  color: white;
+  width: 100%;
+  background-color: #050F04;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 100 bold;
+  color: white;
+}
+
+.nav-toggler{
+  color: white;
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 3%;
+}
+
+/* #title .colored-section{
+  background-image: linear-gradient(#050f04 #19391F);
+} */
+
+/* Title Image */
+
+.title-image {
+  width: 60%;
+}
+
+.title-image-col{
+  text-align: center;
+}
+
+/* Features Section */
+
+/* #features {
+  position: relative;
+} */
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.textimg{
+    width: 25%;
+    margin: 0 3%;
+}
+
+.icon{
+  color: #50e29b;
+  margin-bottom: 1rem;
+}
+
+.icon:hover, .icon:active{
+  color: #95f3c6;
+  transition: .2s ease-in-out;
+}
+
+.escuro{
+    background-color: #050f0f;
+    background-image: linear-gradient(#050f0f, #19391F);
+    color: white;
+    text-align: center;
+}
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CTA Section */
+
+
+/* Footer Section */
+
+#footer{
+  background-color: #050F04;
+  padding: 3% 15% 3%;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.footer-icons{
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+  .container-fluid{
+    padding: 3% 8%;
+  }
+  .navbar{
+    margin-bottom: 1.4rem;
+  }
+  .navbar-brand{
+    font-size: 5.5vw;
+  }
+  .big-heading{
+    font-size: 2.5rem;
+    line-height: 1.75;
+  }
+  .section-heading{
+    font-size: 2rem;
+  }
+  .section-text{
+    font-size: 1.2rem;
+  }
+  .invisible{
+    display: none;
+  }
+  .colored-section caption{
+    color: black;
+  }
+  caption{
+    font-size: .8rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .nav-item{
+    padding: 0 8px;
+  }
+  
+}
+@media screen and (max-width: 1024px){
+  .iflogo{
+    display: none;
+  }
+  .objcol, .icon{
+    margin: 5% 0%;
+  }
+}
